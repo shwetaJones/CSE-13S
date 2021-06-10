@@ -1,0 +1,7 @@
+## Assignment 7
+Program Description: This program uses several different ADTs including nodes, linked lists, hash tables, bit vectors and bloom filters. The program keeps track of badspeak and oldspeak words to decide whether of not the user gets accused of a thoughtcrime. When a basspeak doesn't have a translation, the user is accused of thoughcrime  and sent to joycamp, and otherwise they are sent to counsel. There are a few command line options: h, t, f, m, s. The '-h' option points out the help information which provides program usage information. The '-t' option specifies the size of the hash table, if this is not specified, the default size is set to 10000. If the user write '-f', this specifies the size of the bloom filter (the default is 2^20). The '-m' option enables mtf, or move-to-front rule. If this is not selected, this rule is not applied. This '-s' option allows for the user to see the stats of the program which are: total number of seeks, average seek length, hash table load, and the bloom filter load. This program is run on terminal and requires linux/unix. THe program also requires several c files: node.c, ll.c, ht.c, bf.c, bv.c, parser.c, and speck.c, along with thier corresponding h files. The program also uses badspeak.txt and newspeak.txt. And finally the main file we run is banhammer.c. The scan-build doesn't report any false positives or any bugs.  
+
+## Build
+	$clang -Wall -Wextra -Werror -Wpedantic -o banhammer banhammer.c
+## Clean
+	$rm -f banhammer banhammer.c

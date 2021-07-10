@@ -1,7 +1,11 @@
 # CSE-13S
 Computer Systems and C Programming
 
-This directory contains code and other documents created during CSE 13s taught by Professor Darrell Long. The different assignments are:
+University: University of California, Santa Cruz
+
+Professor: Professor Darrell Long
+
+This directory contains code and other documents created during CSE 13s 
 
   Asgn 0: git'n Started
   
